@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- in <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body >
+
+<div class="wrapper" id="main">
+    
+    
+    <div class="wrapperTop">
+        <h1 class="heading">Random Password Generator</h1>
+        <h3 class="belowHeading">Create strong and secure passwords to keep your account safe online.</h3>
+    </div>
+
+
+
+    <div class="wrapperDown">
+
+
+        <div class="wrapperDownLeft">
+              <img src="assets/Password-Generator-1.svg" alt="" id="leftImg">
+        </div>
+
+
+        <div class="wrapperDownRight">
+            
+        <div class="displayContainer" id="inputContainer1">
+            <input type="text" readonly placeholder="Password" class="displayPanel" data-passwordDisplay>
+
+            
+            <button  data-copyBtn >
+                <span data-copyMsg></span>
+                <!-- <img src="./assets/copy.svg" alt="abc" width="25" height="25" > -->
+                 <h2 class="copy" style="color: white;">Copy</h2>
+            </button>
+        </div>
+
+        <div class="inputContainer" id="inputContainer2" style="margin-top: 35px;">
+            <div class="passwordLenght">
+                <h2 style="font-size: 20px; ">Password Length :</h2>
+                <div class="passwordNo" style="margin-left:5px; font-size: 20px; font-weight: 700;"></div>
+            </div>
+            <input type="range" min="0" max="20" class="slider"    
+             step="1" data-lengthSlider  >
+          </div> 
+
+
+         <div class="inputContainer" id="inputContainer3"> 
+            <!-- checkboxes -->
+             <h2 style="font-size: 20px;"> Characters Used:</h2>
+             
+            <div class="checkboxes">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase"> ABC</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">abc</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="numbers">
+                <label for="numbers"> 123</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="symbols">
+                <label for="symbols"> #$&</label>
+            </div>
+         </div>
+
+
+         <div class="inputContainer" id="inputContainer4">
+            <!-- strength Section -->
+            <div class="strenghtContainer">
+                <h2>Strength</h2>
+            <div data-indicator > </div>
+            </div>
+
+            <!-- generate Password -->
+            <button data-generatePassword>Generator Password</button>
+
+
+        </div>  
+
+    
+      </div>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
